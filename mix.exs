@@ -4,7 +4,7 @@ defmodule CanonicalLogs.MixProject do
   def project do
     [
       app: :canonical_logs,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.10",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
@@ -43,7 +43,7 @@ defmodule CanonicalLogs.MixProject do
     [
       {:plug, "~> 1.11"},
       {:telemetry, "~> 1.0"},
-      {:absinthe, "~> 1.6.3", optional: true},
+      {:absinthe, "~> 1.7", optional: true},
       {:absinthe_plug, "~> 1.5", only: [:dev, :test]},
       {:jason, "~> 1.4", only: [:dev, :test]},
       {:ex_doc, "~> 0.29", only: :dev, runtime: false}
